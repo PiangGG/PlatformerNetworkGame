@@ -16,6 +16,7 @@
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGameGameModeBase.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerPlayerState.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup_Fireball.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\BaseCharacter.gen.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Fireball.gen.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup.gen.cpp.obj"
@@ -25,6 +26,7 @@
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGameGameModeBase.gen.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerPlayerState.gen.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup_Fireball.gen.cpp.obj"
 "D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Default.rc2.res"
 /OUT:"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\UE4Editor-PlatformerGame.lib"
 /INCLUDE:IMPLEMENT_MODULE_PlatformerGame
