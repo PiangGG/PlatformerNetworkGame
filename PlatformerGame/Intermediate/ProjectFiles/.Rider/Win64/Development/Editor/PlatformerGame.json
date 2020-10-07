@@ -13111,6 +13111,9 @@
 				"Engine",
 				"InputCore"
 			],
+			"PrivateDependencyModules": [
+				"Engine"
+			],
 			"PublicIncludePaths": [
 				"D:\\Code\\unreal\\PlatformerNetworkGame\\PlatformerGame\\Source"
 			],

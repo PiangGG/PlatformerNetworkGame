@@ -1,0 +1,86 @@
+/MANIFEST:EMBED
+/MANIFESTINPUT:"D:\component application\unreal\UE_4.25\Engine\Build\Windows\Resources\Default-Win64.manifest"
+/NOLOGO
+/DEBUG
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/FIXED:No
+/NXCOMPAT
+/STACK:12000000
+/DELAY:UNLOAD
+/DLL
+/PDBALTPATH:%_PDB%
+/OPT:NOREF
+/OPT:NOICF
+/INCREMENTAL:NO
+/ignore:4199
+/ignore:4099
+/DELAYLOAD:"d3d12.dll"
+/DELAYLOAD:"DBGHELP.DLL"
+/LIBPATH:"D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64"
+/NODEFAULTLIB:"LIBCMT"
+/NODEFAULTLIB:"LIBCPMT"
+/NODEFAULTLIB:"LIBCMTD"
+/NODEFAULTLIB:"LIBCPMTD"
+/NODEFAULTLIB:"MSVCRTD"
+/NODEFAULTLIB:"MSVCPRTD"
+/NODEFAULTLIB:"LIBC"
+/NODEFAULTLIB:"LIBCP"
+/NODEFAULTLIB:"LIBCD"
+/NODEFAULTLIB:"LIBCPD"
+/FUNCTIONPADMIN
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\PlatformerGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\BaseCharacter.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup_Coin.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup_heart.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGame.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGameGameModeBase.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerPlayerState.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\BaseCharacter.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup_Coin.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Pickup_heart.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGame.init.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerGameGameModeBase.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\PlatformerPlayerState.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Powerup.gen.cpp.obj"
+"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Default.rc2.res"
+"delayimp.lib"
+"wininet.lib"
+"rpcrt4.lib"
+"ws2_32.lib"
+"dbghelp.lib"
+"comctl32.lib"
+"Winmm.lib"
+"kernel32.lib"
+"user32.lib"
+"gdi32.lib"
+"winspool.lib"
+"comdlg32.lib"
+"advapi32.lib"
+"shell32.lib"
+"ole32.lib"
+"oleaut32.lib"
+"uuid.lib"
+"odbc32.lib"
+"odbccp32.lib"
+"netapi32.lib"
+"iphlpapi.lib"
+"setupapi.lib"
+"dwmapi.lib"
+"imm32.lib"
+"D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
+/OUT:"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Binaries\Win64\UE4Editor-PlatformerGame-3845.dll"
+/IMPLIB:"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\UE4Editor-PlatformerGame-3845.suppressed.lib"
+/PDB:"D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Binaries\Win64\UE4Editor-PlatformerGame-3845.pdb"
+/ignore:4078
+/INCLUDE:IMPLEMENT_MODULE_PlatformerGame

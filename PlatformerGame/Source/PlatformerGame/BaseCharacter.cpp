@@ -4,10 +4,14 @@
 #include "BaseCharacter.h"
 
 
+
+#include "PlatformerPlayerState.h"
+#include "Powerup.h"
 #include "Camera/CameraComponent.h"
 #include "Components/ArrowComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Net/UnrealNetwork.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -62,10 +66,10 @@ ABaseCharacter::ABaseCharacter()
 	GetCharacterMovement()->AirControl = 0.8f;
 
 	//Starts without a powerup selected
-	//SelectedPowerupIndex = -1;
+	SelectedPowerupIndex = -1;
 
 	//Initialize array
-	//PowerUps = TArray<APowerup*>();
+	PowerUps = TArray<APowerup*>();
 }
 
 void ABaseCharacter::MoveForward(float amount)
@@ -93,7 +97,13 @@ void ABaseCharacter::RotateCamera(float amount)
 		SpringArm->SetWorldRotation(FQuat::MakeFromEuler(rot));
 	}
 }
+void ABaseCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
+	//replicates to everyone
+	DOREPLIFETIME(ABaseCharacter, bIsFiring);
+}
 void ABaseCharacter::ChangeCameraHeight(float amount)
 {
 	//add rotation on spring arm's y axis. Clamp between -45 and -5
@@ -130,11 +140,119 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	InputComponent->BindAction("Jump", EInputEvent::IE_Pressed, this, &ACharacter::Jump);
-	//InputComponent->BindAction("UsePowerup", EInputEvent::IE_Pressed, this, &ABaseCharacter::UsePowerupStartClient);
+	InputComponent->BindAction("UsePowerup", EInputEvent::IE_Pressed, this, &ABaseCharacter::UsePowerupStartClient);
 
 	InputComponent->BindAxis("ChangeCameraHeight", this, &ABaseCharacter::ChangeCameraHeight);
 	InputComponent->BindAxis("RotateCamera", this, &ABaseCharacter::RotateCamera);
 	InputComponent->BindAxis("MoveForward", this, &ABaseCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &ABaseCharacter::MoveRight);
+}
+
+void ABaseCharacter::UsePowerupStartClient()
+{
+	// check local conditions
+
+	//call powerup use on server
+	UsePowerupStartServer();
+}
+
+void ABaseCharacter::UsePowerupStartServer_Implementation()
+{
+	//if we're not firing and we have a powerup
+	if (!bIsFiring && SelectedPowerupIndex >= 0) {
+		bIsFiring = true;
+	}
+}
+
+bool ABaseCharacter::UsePowerupStartServer_Validate()
+{
+	return true;
+}
+
+void ABaseCharacter::PowerupUsed_Implementation()
+{
+	//if we're currently firing
+	if (bIsFiring) {
+		//get hand location at this point in the animation
+		FVector HandLocation = GetMesh()->GetBoneLocation(FName("LeftHandMiddle1"));
+
+		//once again just ensure that selected powerup is valid
+		if (SelectedPowerupIndex >= 0) {
+			//get the player state
+			APlatformerPlayerState *PS = Cast<APlatformerPlayerState>(GetPlayerState());
+
+			if (PS) {
+				PS->SelectedPowerup->UsePowerup(this, HandLocation, TraceDirection->GetForwardVector());
+			}
+		}
+
+		bIsFiring = false;
+	}
+}
+
+bool ABaseCharacter::PowerupUsed_Validate()
+{
+	return true;
+}
+
+void ABaseCharacter::CollectCoin()
+{
+	APlatformerPlayerState *PS = Cast<APlatformerPlayerState>(GetPlayerState());
+
+	if (PS) {
+		PS->CollectCoin();
+	}
+}
+
+void ABaseCharacter::CollectHeart()
+{
+	APlatformerPlayerState *PS = Cast<APlatformerPlayerState>(GetPlayerState());
+
+	if (PS) {
+		PS->CollectHeart();
+	}
+}
+
+void ABaseCharacter::CollectPowerup(APowerup* Powerup)
+{
+	//add the powerup to inventory
+	PowerUps.Add(Powerup);
+
+	//Attach the powerup to the character; for posterity
+	Powerup->AttachToComponent(RootComponent, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+
+	//if we didn't have a powerup, select this powerup
+	if (SelectedPowerupIndex < 0) {
+		NextPowerup();
+	}
+}
+
+void ABaseCharacter::NextPowerup()
+{
+	//if our powerup array isnt empty
+	if (PowerUps.Num() != 0) {
+		//Increase Powerup index
+		SelectedPowerupIndex++;
+
+		if (SelectedPowerupIndex >= PowerUps.Num()) {
+			SelectedPowerupIndex = 0;
+		}
+
+		//tell the player state that our new powerup has been selected
+		APlatformerPlayerState *PS = Cast<APlatformerPlayerState>(GetPlayerState());
+
+		if (PS) {
+			PS->SelectedPowerup = PowerUps[SelectedPowerupIndex];
+		}
+	}
+}
+
+void ABaseCharacter::ReceiveDamage(int amount)
+{
+	APlatformerPlayerState *PS = Cast<APlatformerPlayerState>(GetPlayerState());
+
+	if (PS) {
+		PS->ReceiveDamage(amount);
+	}
 }
 

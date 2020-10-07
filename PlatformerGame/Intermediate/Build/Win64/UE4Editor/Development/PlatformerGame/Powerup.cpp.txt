@@ -1,0 +1,15 @@
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Definitions.PlatformerGame.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\Powerup.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\Pickup.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\Pickup.generated.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\Powerup.generated.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\BaseCharacter.h
+D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\BaseCharacter.generated.h
+D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
