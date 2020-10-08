@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PlatformerGame",
+			"Path": "D:\\Code\\unreal\\PlatformerNetworkGame\\PlatformerGame\\Source\\PlatformerGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PlatformerGameEditor",
+			"Path": "D:\\Code\\unreal\\PlatformerNetworkGame\\PlatformerGame\\Source\\PlatformerGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

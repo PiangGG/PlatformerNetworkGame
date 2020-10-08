@@ -1,7 +1,0 @@
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Definitions.PlatformerGame.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame/Pickup_heart.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\Pickup.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\Pickup.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\Pickup_heart.generated.h
