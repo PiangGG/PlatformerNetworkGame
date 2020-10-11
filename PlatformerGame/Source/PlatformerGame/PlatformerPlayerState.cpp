@@ -11,6 +11,9 @@ APlatformerPlayerState::APlatformerPlayerState()
     CurrentHealth = MaxHealth;
     NumberOfDeaths = 0;
     SelectedPowerup = nullptr;
+    bIsReady = false;
+    bSpectator = false;
+    SelectedCharacterIndex = 0;
 }
 
 void APlatformerPlayerState::GetLifetimeReplicatedProps(TArray< FLifetimeProperty > & OutLifetimeProps) const
@@ -21,6 +24,9 @@ void APlatformerPlayerState::GetLifetimeReplicatedProps(TArray< FLifetimePropert
     DOREPLIFETIME(APlatformerPlayerState, NumberOfCoinsCollected);
     DOREPLIFETIME(APlatformerPlayerState, NumberOfDeaths);
     DOREPLIFETIME(APlatformerPlayerState, SelectedPowerup);
+    DOREPLIFETIME(APlatformerPlayerState, bIsReady);
+    DOREPLIFETIME(APlatformerPlayerState, bSpectator);
+    DOREPLIFETIME(APlatformerPlayerState, SelectedCharacterIndex);
 }
 
 void APlatformerPlayerState::CollectCoin()
@@ -41,4 +47,34 @@ void APlatformerPlayerState::ReceiveDamage(int amount)
     CurrentHealth -= amount;
 
     CurrentHealth = FMath::Clamp(CurrentHealth, 0, MaxHealth);
+}
+
+void APlatformerPlayerState::SelectCharacter_Implementation(int index)
+{
+    SelectedCharacterIndex = index;
+}
+
+bool APlatformerPlayerState::SelectCharacter_Validate(int index)
+{
+    return true;
+}
+
+void APlatformerPlayerState::ToggleSpectator_Implementation()
+{
+    bSpectator = !bSpectator;
+}
+
+bool APlatformerPlayerState::ToggleSpectator_Validate()
+{
+    return true;
+}
+
+void APlatformerPlayerState::ToggleReady_Implementation()
+{
+    bIsReady = !bIsReady;
+}
+
+bool APlatformerPlayerState::ToggleReady_Validate()
+{
+    return true;
 }

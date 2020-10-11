@@ -5,6 +5,7 @@
 
 
 
+#include "PlatformerPlayerController.h"
 #include "PlatformerPlayerState.h"
 #include "Powerup.h"
 #include "Camera/CameraComponent.h"
@@ -74,6 +75,9 @@ ABaseCharacter::ABaseCharacter()
 
 void ABaseCharacter::MoveForward(float amount)
 {
+	APlatformerPlayerController *PC = Cast<APlatformerPlayerController>(GetWorld()->GetFirstPlayerController());
+
+	if (PC && PC->bPauseMenuDisplayed) return;
 	//add movement input in the direction the camera is facing
 	if (Controller && amount) {
 		AddMovementInput(SpringArm->GetForwardVector(), amount);
@@ -82,6 +86,9 @@ void ABaseCharacter::MoveForward(float amount)
 
 void ABaseCharacter::MoveRight(float amount)
 {
+	APlatformerPlayerController *PC = Cast<APlatformerPlayerController>(GetWorld()->GetFirstPlayerController());
+
+	if (PC && PC->bPauseMenuDisplayed) return;
 	//add input in the camera's right direction
 	if (Controller && amount) {
 		AddMovementInput(SpringArm->GetRightVector(), amount);
@@ -90,6 +97,9 @@ void ABaseCharacter::MoveRight(float amount)
 
 void ABaseCharacter::RotateCamera(float amount)
 {
+	APlatformerPlayerController *PC = Cast<APlatformerPlayerController>(GetWorld()->GetFirstPlayerController());
+
+	if (PC && PC->bPauseMenuDisplayed) return;
 	//add rotation on the spring arm's z axis
 	if (Controller && amount) {
 		FVector rot = SpringArm->GetComponentRotation().Euler();
@@ -106,6 +116,9 @@ void ABaseCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLi
 }
 void ABaseCharacter::ChangeCameraHeight(float amount)
 {
+	APlatformerPlayerController *PC = Cast<APlatformerPlayerController>(GetWorld()->GetFirstPlayerController());
+
+	if (PC && PC->bPauseMenuDisplayed) return;
 	//add rotation on spring arm's y axis. Clamp between -45 and -5
 	if (Controller && amount) {
 		FVector rot = SpringArm->GetComponentRotation().Euler();
@@ -151,7 +164,9 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 void ABaseCharacter::UsePowerupStartClient()
 {
 	// check local conditions
+	APlatformerPlayerController *PC = Cast<APlatformerPlayerController>(GetWorld()->GetFirstPlayerController());
 
+	if (PC && PC->bPauseMenuDisplayed) return;
 	//call powerup use on server
 	UsePowerupStartServer();
 }

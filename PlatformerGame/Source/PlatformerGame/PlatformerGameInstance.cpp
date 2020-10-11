@@ -73,14 +73,19 @@ void UPlatformerGameInstance::SetInputMode(EInputMode newInputMode, bool bShowMo
             break;
     }
     case EInputMode::EGameOnly: {
-            GetWorld()->GetFirstPlayerController()->SetInputMode(FInputModeGameOnly());
+            if (GetWorld()->GetFirstPlayerController())
+            {
+                GetWorld()->GetFirstPlayerController()->SetInputMode(FInputModeGameOnly());
+            } 
             break;
     }
     }
 
     //show or hide the mouse cursor
-    GetWorld()->GetFirstPlayerController()->bShowMouseCursor = bShowMouseCursor;
-
+    if ( GetWorld()->GetFirstPlayerController())
+    {
+        GetWorld()->GetFirstPlayerController()->bShowMouseCursor = bShowMouseCursor;
+    }
     //retain the values for further use
     CurrentInputMode = newInputMode;
     bIsShowingMouseCursor = bShowMouseCursor;
@@ -529,30 +534,42 @@ void UPlatformerGameInstance::EnterState(EGameState newState)
             //create the widget
             currentWidget = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), cLoadingScreen);
             //add the widget to the viewport
-            currentWidget->AddToViewport();
-
+          
+            if (currentWidget)
+            {
+                currentWidget->AddToViewport();
+                SetInputMode(EInputMode::EUIOnly, true);
+            }
             //go to the appropriate input mode
-            SetInputMode(EInputMode::EUIOnly, true);
+           
             break;
     }
     case EGameState::EMainMenu: {
             //create the widget
             currentWidget = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), cMainMenu);
+            if (currentWidget)
+            {
             //add the widget to the viewport
             currentWidget->AddToViewport();
 
             //go to the appropriate input mode
-            SetInputMode(EInputMode::EUIOnly, true);
+            SetInputMode(EInputMode::EUIOnly, true);     
+            }
+              
             break;
     }
     case EGameState::EMultiplayerHome: {
             //create the widget
             currentWidget = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), cMPHome);
-            //add the widget to the viewport
-            currentWidget->AddToViewport();
+            if (currentWidget)
+            {
+                    //add the widget to the viewport
+                    currentWidget->AddToViewport();
 
-            //go to the appropriate input mode
-            SetInputMode(EInputMode::EUIOnly, true);
+                    //go to the appropriate input mode
+                    SetInputMode(EInputMode::EUIOnly, true);      
+            }
+            
             break;
     }
 
@@ -560,21 +577,27 @@ void UPlatformerGameInstance::EnterState(EGameState newState)
             //create the widget
             currentWidget = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), cMPJoin);
             //add the widget to the viewport
-            currentWidget->AddToViewport();
+            if (true)
+            {
+                    currentWidget->AddToViewport();
 
-            //go to the appropriate input mode
-            SetInputMode(EInputMode::EUIOnly, true);
+                    //go to the appropriate input mode
+                    SetInputMode(EInputMode::EUIOnly, true);     
+            }
+            
             break;
     }
     case EGameState::EMultiplayerHost: {
             //create the widget
             currentWidget = CreateWidget<UUserWidget>(GetWorld()->GetFirstPlayerController(), cMPHost);
-            //add the widget to the viewport
-            currentWidget->AddToViewport();
+            if (true)
+            {
+                    //add the widget to the viewport
+                    currentWidget->AddToViewport();
 
-            //go to the appropriate input mode
-            SetInputMode(EInputMode::EUIOnly, true);
-
+                    //go to the appropriate input mode
+                    SetInputMode(EInputMode::EUIOnly, true);   
+            }
             break;
     }
     case EGameState::EMultiplayerInGame: {
@@ -629,6 +652,5 @@ void UPlatformerGameInstance::LeaveState()
                         break;
         }
         }
-
         EnterState(EGameState::ENone);
 }

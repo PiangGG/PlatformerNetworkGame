@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "PlatformerGameState.h"
 #include "GameFramework/PlayerState.h"
 #include "PlatformerPlayerState.generated.h"
 
@@ -41,4 +43,30 @@ class PLATFORMERGAME_API APlatformerPlayerState : public APlayerState
 
 	UFUNCTION(BlueprintCallable, Category = "Player State")
     void ReceiveDamage(int amount);
+
+	//For keeping track of what UI we're displaying locally
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Platformer Player State")
+	EMatchState CurrentLocalMatchState;
+
+	//boolean for keeping track of ready state
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Platformer Player State")
+	bool bIsReady;
+
+	//boolean for keeping track of whether a player wants to specate
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Platformer Player State")
+	bool bSpectator;
+
+	//int for keeping track of selected character
+	UPROPERTY(Replicated, VisibleAnywhere, BlueprintReadOnly, Category = "Platformer Player State")
+	int SelectedCharacterIndex;
+
+	//we'll also need server functions for changing these
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category = "Platformer Player State")
+        void ToggleReady();
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category = "Platformer Player State")
+        void ToggleSpectator();
+
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable, Category = "Platformer Player State")
+        void SelectCharacter(int index);
 };

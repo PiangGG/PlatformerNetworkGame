@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PlatformerGame.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC78A8E-BDA2-45DB-9C66-E88E26086B25}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PlatformerGame.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PlatformerGameEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\PlatformerNetworkGame.lnk" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{12465239-D37B-463D-8D28-7B0A159F02E2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PlatformerGame">
+      <UniqueIdentifier>{02CD54C8-0D31-40C1-B01D-4DEF351C5B43}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PlatformerGame\BaseCharacter.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\BaseCharacter.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Fireball.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Fireball.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Pickup.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Pickup.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Pickup_Coin.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Pickup_Coin.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Pickup_heart.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Pickup_heart.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\PlatformerGame\PlatformerGame.Build.cs">
+      <Filter>Source\PlatformerGame</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerGame.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerGame.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerGameGameModeBase.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerGameGameModeBase.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerGameInstance.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerGameInstance.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerGameState.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerGameState.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerPlayerController.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerPlayerController.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\PlatformerPlayerState.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\PlatformerPlayerState.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Powerup.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Powerup.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlatformerGame\Powerup_Fireball.cpp">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlatformerGame\Powerup_Fireball.h">
+      <Filter>Source\PlatformerGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
