@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlatformerGameGameModeBase, 729190146);
+	IMPLEMENT_CLASS(APlatformerGameGameModeBase, 1635486817);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APlatformerGameGameModeBase>()
 	{
 		return APlatformerGameGameModeBase::StaticClass();

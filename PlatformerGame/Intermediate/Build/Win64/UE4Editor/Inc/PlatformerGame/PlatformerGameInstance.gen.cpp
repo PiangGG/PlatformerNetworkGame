@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameInstance() {}
 		return EInputMode_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EInputMode(EInputMode_StaticEnum, TEXT("/Script/PlatformerGame"), TEXT("EInputMode"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_PlatformerGame_EInputMode_Hash() { return 2007443273U; }
+	uint32 Get_Z_Construct_UEnum_PlatformerGame_EInputMode_Hash() { return 1021005774U; }
 	UEnum* Z_Construct_UEnum_PlatformerGame_EInputMode()
 	{
 #if WITH_HOT_RELOAD
@@ -76,6 +76,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameInstance() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -98,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameInstance() {}
 		return EGameState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EGameState(EGameState_StaticEnum, TEXT("/Script/PlatformerGame"), TEXT("EGameState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_PlatformerGame_EGameState_Hash() { return 3595762773U; }
+	uint32 Get_Z_Construct_UEnum_PlatformerGame_EGameState_Hash() { return 2600594042U; }
 	UEnum* Z_Construct_UEnum_PlatformerGame_EGameState()
 	{
 #if WITH_HOT_RELOAD
@@ -154,6 +155,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameInstance() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -191,30 +193,30 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSearch
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxPlayers_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerName_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxPlayers;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentPlayers_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurrentPlayers;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PingInMs_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_PingInMs;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MapName_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_MapName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ServerName;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsInProgress_MetaData[];
 #endif
 		static void NewProp_bIsInProgress_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsInProgress;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ServerName_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MapName_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ServerName;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_MapName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PingInMs_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_PingInMs;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentPlayers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_CurrentPlayers;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxPlayers_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxPlayers;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -231,33 +233,12 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSearch
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FBlueprintSearchResult>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData[] = {
 		{ "Category", "Session Management" },
 		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers = { "MaxPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, MaxPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData[] = {
-		{ "Category", "Session Management" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers = { "CurrentPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, CurrentPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData[] = {
-		{ "Category", "Session Management" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs = { "PingInMs", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, PingInMs), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData[] = {
-		{ "Category", "Session Management" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName = { "MapName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, MapName), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName = { "ServerName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, ServerName), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress_MetaData[] = {
 		{ "Category", "Session Management" },
@@ -270,19 +251,40 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSearch
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress = { "bIsInProgress", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FBlueprintSearchResult), &Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData[] = {
 		{ "Category", "Session Management" },
 		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName = { "ServerName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, ServerName), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName = { "MapName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, MapName), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData[] = {
+		{ "Category", "Session Management" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs = { "PingInMs", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, PingInMs), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData[] = {
+		{ "Category", "Session Management" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers = { "CurrentPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, CurrentPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData[] = {
+		{ "Category", "Session Management" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers = { "MaxPlayers", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSearchResult, MaxPlayers), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_ServerName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_bIsInProgress,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MapName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_PingInMs,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_CurrentPlayers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::NewProp_MaxPlayers,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FBlueprintSearchResult_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
@@ -312,7 +314,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSearch
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBlueprintSearchResult_Hash() { return 646758610U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBlueprintSearchResult_Hash() { return 1489016462U; }
 class UScriptStruct* FBlueprintSessionSetting::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -342,13 +344,13 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_value_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_value;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_key_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_key;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_value_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_value;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -365,22 +367,22 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FBlueprintSessionSetting>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData[] = {
-		{ "Category", "Session Management" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSessionSetting, value), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_key_MetaData[] = {
 		{ "Category", "Session Management" },
 		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_key = { "key", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSessionSetting, key), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_key_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_key_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData[] = {
+		{ "Category", "Session Management" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value = { "value", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FBlueprintSessionSetting, value), METADATA_PARAMS(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_key,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::NewProp_value,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FBlueprintSessionSetting_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
@@ -410,7 +412,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FBlueprintSessionSetting_Hash() { return 963466345U; }
+	uint32 Get_Z_Construct_UScriptStruct_FBlueprintSessionSetting_Hash() { return 2319712207U; }
 	DEFINE_FUNCTION(UPlatformerGameInstance::execLeaveGame)
 	{
 		P_FINISH;
@@ -506,19 +508,19 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		{
 			EGameState newState;
 		};
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newState;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_newState_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newState;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventChangeState_Parms, newState), Z_Construct_UEnum_PlatformerGame_EGameState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventChangeState_Parms, newState), Z_Construct_UEnum_PlatformerGame_EGameState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::NewProp_newState,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlatformerGameInstance_ChangeState_Statics::Function_MetaDataParams[] = {
@@ -584,19 +586,19 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		{
 			EGameState ReturnValue;
 		};
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventGetCurrentGameState_Parms, ReturnValue), Z_Construct_UEnum_PlatformerGame_EGameState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventGetCurrentGameState_Parms, ReturnValue), Z_Construct_UEnum_PlatformerGame_EGameState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState_Statics::Function_MetaDataParams[] = {
@@ -623,19 +625,19 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 			FString key;
 			FString ReturnValue;
 		};
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_key;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventGetSessionSpecialSettingString_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_key = { "key", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventGetSessionSpecialSettingString_Parms, key), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventGetSessionSpecialSettingString_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_key,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString_Statics::Function_MetaDataParams[] = {
@@ -663,30 +665,30 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 			int32 MaxNumPlayers;
 			TArray<FBlueprintSessionSetting> sessionSettings;
 		};
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_sessionSettings;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_sessionSettings_Inner;
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxNumPlayers;
 		static void NewProp_bIsLAN_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsLAN;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_MaxNumPlayers;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_sessionSettings_Inner;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_sessionSettings;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings = { "sessionSettings", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventHostGame_Parms, sessionSettings), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings_Inner = { "sessionSettings", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FBlueprintSessionSetting, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_MaxNumPlayers = { "MaxNumPlayers", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventHostGame_Parms, MaxNumPlayers), METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_bIsLAN_SetBit(void* Obj)
 	{
 		((PlatformerGameInstance_eventHostGame_Parms*)Obj)->bIsLAN = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_bIsLAN = { "bIsLAN", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(PlatformerGameInstance_eventHostGame_Parms), &Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_bIsLAN_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_MaxNumPlayers = { "MaxNumPlayers", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventHostGame_Parms, MaxNumPlayers), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings_Inner = { "sessionSettings", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FBlueprintSessionSetting, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings = { "sessionSettings", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventHostGame_Parms, sessionSettings), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_MaxNumPlayers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_bIsLAN,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_MaxNumPlayers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::NewProp_sessionSettings,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlatformerGameInstance_HostGame_Statics::Function_MetaDataParams[] = {
@@ -773,27 +775,27 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 			EInputMode newInputMode;
 			bool bShowMouseCursor;
 		};
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_newInputMode_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newInputMode;
 		static void NewProp_bShowMouseCursor_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bShowMouseCursor;
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newInputMode;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_newInputMode_Underlying;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode = { "newInputMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventSetInputMode_Parms, newInputMode), Z_Construct_UEnum_PlatformerGame_EInputMode, METADATA_PARAMS(nullptr, 0) };
 	void Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_bShowMouseCursor_SetBit(void* Obj)
 	{
 		((PlatformerGameInstance_eventSetInputMode_Parms*)Obj)->bShowMouseCursor = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_bShowMouseCursor = { "bShowMouseCursor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(PlatformerGameInstance_eventSetInputMode_Parms), &Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_bShowMouseCursor_SetBit, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode = { "newInputMode", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameInstance_eventSetInputMode_Parms, newInputMode), Z_Construct_UEnum_PlatformerGame_EInputMode, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_bShowMouseCursor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_newInputMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::NewProp_bShowMouseCursor,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode_Statics::Function_MetaDataParams[] = {
@@ -860,50 +862,50 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSearchingForGames_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMainMenu_MetaData[];
 #endif
-		static void NewProp_bSearchingForGames_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSearchingForGames;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMainMenu;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPHome_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPHome;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPJoin_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPJoin;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPHost_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPHost;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cLoadingScreen_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cLoadingScreen;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_CurrentInputMode_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentInputMode_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_CurrentInputMode;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsShowingMouseCursor_MetaData[];
+#endif
+		static void NewProp_bIsShowingMouseCursor_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsShowingMouseCursor;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_searchResults_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_searchResults_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_searchResults;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bHasFinishedSearchingForGames_MetaData[];
 #endif
 		static void NewProp_bHasFinishedSearchingForGames_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bHasFinishedSearchingForGames;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_searchResults_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSearchingForGames_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_searchResults;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_searchResults_Inner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsShowingMouseCursor_MetaData[];
-#endif
-		static void NewProp_bIsShowingMouseCursor_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsShowingMouseCursor;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentInputMode_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_CurrentInputMode;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_CurrentInputMode_Underlying;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cLoadingScreen_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cLoadingScreen;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPHost_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPHost;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPJoin_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPJoin;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMPHome_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMPHome;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cMainMenu_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cMainMenu;
+		static void NewProp_bSearchingForGames_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSearchingForGames;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -913,14 +915,14 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPlatformerGameInstance_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UPlatformerGameInstance_ChangeState, "ChangeState" }, // 2258287090
+		{ &Z_Construct_UFunction_UPlatformerGameInstance_ChangeState, "ChangeState" }, // 3548203673
 		{ &Z_Construct_UFunction_UPlatformerGameInstance_FindGames, "FindGames" }, // 1343301760
-		{ &Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState, "GetCurrentGameState" }, // 180967900
-		{ &Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString, "GetSessionSpecialSettingString" }, // 2838927724
-		{ &Z_Construct_UFunction_UPlatformerGameInstance_HostGame, "HostGame" }, // 3755436303
+		{ &Z_Construct_UFunction_UPlatformerGameInstance_GetCurrentGameState, "GetCurrentGameState" }, // 1888246820
+		{ &Z_Construct_UFunction_UPlatformerGameInstance_GetSessionSpecialSettingString, "GetSessionSpecialSettingString" }, // 2904794786
+		{ &Z_Construct_UFunction_UPlatformerGameInstance_HostGame, "HostGame" }, // 4292770466
 		{ &Z_Construct_UFunction_UPlatformerGameInstance_JoinGame, "JoinGame" }, // 4096784696
 		{ &Z_Construct_UFunction_UPlatformerGameInstance_LeaveGame, "LeaveGame" }, // 1748866231
-		{ &Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode, "SetInputMode" }, // 419337930
+		{ &Z_Construct_UFunction_UPlatformerGameInstance_SetInputMode, "SetInputMode" }, // 1533514234
 		{ &Z_Construct_UFunction_UPlatformerGameInstance_SetOrUpdateSessionSpecialSettingString, "SetOrUpdateSessionSpecialSettingString" }, // 3865700351
 	};
 #if WITH_METADATA
@@ -932,16 +934,75 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData[] = {
-		{ "Category", "Session Management" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData[] = {
+		{ "Category", "State Manager" },
+		{ "Comment", "/* Widget references */" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+		{ "ToolTip", "Widget references" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu = { "cMainMenu", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMainMenu), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData[] = {
+		{ "Category", "State Manager" },
 		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
 	};
 #endif
-	void Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_SetBit(void* Obj)
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome = { "cMPHome", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPHome), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData[] = {
+		{ "Category", "State Manager" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin = { "cMPJoin", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPJoin), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData[] = {
+		{ "Category", "State Manager" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost = { "cMPHost", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPHost), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData[] = {
+		{ "Category", "State Manager" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen = { "cLoadingScreen", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cLoadingScreen), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData[] = {
+		{ "Category", "Platformer Game Instance" },
+		{ "Comment", "//Current Input Mode\n" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+		{ "ToolTip", "Current Input Mode" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode = { "CurrentInputMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, CurrentInputMode), Z_Construct_UEnum_PlatformerGame_EInputMode, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData[] = {
+		{ "Category", "Platformer Game Instance" },
+		{ "Comment", "//are we displaying the mouse cursor\n" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+		{ "ToolTip", "are we displaying the mouse cursor" },
+	};
+#endif
+	void Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_SetBit(void* Obj)
 	{
-		((UPlatformerGameInstance*)Obj)->bSearchingForGames = 1;
+		((UPlatformerGameInstance*)Obj)->bIsShowingMouseCursor = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames = { "bSearchingForGames", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlatformerGameInstance), &Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor = { "bIsShowingMouseCursor", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlatformerGameInstance), &Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_Inner = { "searchResults", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FBlueprintSearchResult, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData[] = {
+		{ "Category", "Session Management" },
+		{ "Comment", "/* FINDING SESSIONS *///Array for holding our search results\n" },
+		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
+		{ "ToolTip", "FINDING SESSIONS //Array for holding our search results" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults = { "searchResults", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, searchResults), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames_MetaData[] = {
 		{ "Category", "Session Management" },
@@ -956,88 +1017,29 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames = { "bHasFinishedSearchingForGames", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlatformerGameInstance), &Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData[] = {
 		{ "Category", "Session Management" },
-		{ "Comment", "/* FINDING SESSIONS *///Array for holding our search results\n" },
 		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-		{ "ToolTip", "FINDING SESSIONS //Array for holding our search results" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults = { "searchResults", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, searchResults), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_Inner = { "searchResults", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FBlueprintSearchResult, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData[] = {
-		{ "Category", "Platformer Game Instance" },
-		{ "Comment", "//are we displaying the mouse cursor\n" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-		{ "ToolTip", "are we displaying the mouse cursor" },
-	};
-#endif
-	void Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_SetBit(void* Obj)
+	void Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_SetBit(void* Obj)
 	{
-		((UPlatformerGameInstance*)Obj)->bIsShowingMouseCursor = 1;
+		((UPlatformerGameInstance*)Obj)->bSearchingForGames = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor = { "bIsShowingMouseCursor", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlatformerGameInstance), &Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData[] = {
-		{ "Category", "Platformer Game Instance" },
-		{ "Comment", "//Current Input Mode\n" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-		{ "ToolTip", "Current Input Mode" },
-	};
-#endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode = { "CurrentInputMode", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, CurrentInputMode), Z_Construct_UEnum_PlatformerGame_EInputMode, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData[] = {
-		{ "Category", "State Manager" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen = { "cLoadingScreen", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cLoadingScreen), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData[] = {
-		{ "Category", "State Manager" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost = { "cMPHost", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPHost), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData[] = {
-		{ "Category", "State Manager" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin = { "cMPJoin", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPJoin), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData[] = {
-		{ "Category", "State Manager" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome = { "cMPHome", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMPHome), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData[] = {
-		{ "Category", "State Manager" },
-		{ "Comment", "/* Widget references */" },
-		{ "ModuleRelativePath", "PlatformerGameInstance.h" },
-		{ "ToolTip", "Widget references" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu = { "cMainMenu", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlatformerGameInstance, cMainMenu), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames = { "bSearchingForGames", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UPlatformerGameInstance), &Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_SetBit, METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlatformerGameInstance_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMainMenu,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHome,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPJoin,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cMPHost,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_cLoadingScreen,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_CurrentInputMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bIsShowingMouseCursor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_searchResults,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bHasFinishedSearchingForGames,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlatformerGameInstance_Statics::NewProp_bSearchingForGames,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPlatformerGameInstance_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPlatformerGameInstance>::IsAbstract,
@@ -1054,7 +1056,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::PropPointers),
 		0,
-		0x001000A8u,
+		0x009000A8u,
 		METADATA_PARAMS(Z_Construct_UClass_UPlatformerGameInstance_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UPlatformerGameInstance_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UPlatformerGameInstance()
@@ -1066,7 +1068,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFBlueprintSessio
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlatformerGameInstance, 1029772244);
+	IMPLEMENT_CLASS(UPlatformerGameInstance, 4056342631);
 	template<> PLATFORMERGAME_API UClass* StaticClass<UPlatformerGameInstance>()
 	{
 		return UPlatformerGameInstance::StaticClass();

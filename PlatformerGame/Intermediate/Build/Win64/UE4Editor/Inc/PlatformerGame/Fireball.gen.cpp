@@ -17,17 +17,17 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 	PLATFORMERGAME_API UClass* Z_Construct_UClass_AFireball();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_PlatformerGame();
-	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UPhysicalMaterial_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
+	PHYSICSCORE_API UClass* Z_Construct_UClass_UPhysicalMaterial_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystemComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_ACharacter_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AFireball::execOnHitActor)
 	{
@@ -60,19 +60,19 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 			FHitResult Hit;
 		};
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hit;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_NormalImpulse;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_NormalImpulse;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitComponent;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hit;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -80,31 +80,31 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData[] = {
-		{ "NativeConst", "" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData[] = {
+		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit = { "Hit", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_NormalImpulse = { "NormalImpulse", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent = { "HitComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, HitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp_MetaData)) };
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_NormalImpulse = { "NormalImpulse", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData[] = {
-		{ "EditInline", "true" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData[] = {
+		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent = { "HitComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, HitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit = { "Hit", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Fireball_eventOnHitActor_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFireball_OnHitActor_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_NormalImpulse,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_HitComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_OtherComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_NormalImpulse,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFireball_OnHitActor_Statics::NewProp_Hit,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFireball_OnHitActor_Statics::Function_MetaDataParams[] = {
@@ -135,33 +135,33 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TheOwner_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TheOwner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireParticlesComponent_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireParticlesComponent;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireParticles_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireParticles;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theMaterial_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_theMaterial;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_physMaterial_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_physMaterial;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CollisionSphere_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CollisionSphere;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Mesh_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_physMaterial_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_physMaterial;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_theMaterial_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_theMaterial;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireParticles_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireParticles;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FireParticlesComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FireParticlesComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TheOwner_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_TheOwner;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -171,7 +171,7 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFireball_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFireball_OnHitActor, "OnHitActor" }, // 3531168763
+		{ &Z_Construct_UFunction_AFireball_OnHitActor, "OnHitActor" }, // 4042645666
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::Class_MetaDataParams[] = {
@@ -179,50 +179,6 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		{ "ModuleRelativePath", "Fireball.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner = { "TheOwner", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, TheOwner), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent = { "FireParticlesComponent", nullptr, (EPropertyFlags)0x0010000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, FireParticlesComponent), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles = { "FireParticles", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, FireParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial = { "theMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, theMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial = { "physMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, physMaterial), Z_Construct_UClass_UPhysicalMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData[] = {
-		{ "Category", "Fireball" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Fireball.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere = { "CollisionSphere", nullptr, (EPropertyFlags)0x0010000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, CollisionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_Mesh_MetaData[] = {
 		{ "Category", "Fireball" },
@@ -233,14 +189,58 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, Mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_Mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_Mesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere = { "CollisionSphere", nullptr, (EPropertyFlags)0x0010000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, CollisionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial = { "physMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, physMaterial), Z_Construct_UClass_UPhysicalMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial = { "theMaterial", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, theMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles = { "FireParticles", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, FireParticles), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent = { "FireParticlesComponent", nullptr, (EPropertyFlags)0x0010000000090009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, FireParticlesComponent), Z_Construct_UClass_UParticleSystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData[] = {
+		{ "Category", "Fireball" },
+		{ "ModuleRelativePath", "Fireball.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner = { "TheOwner", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFireball, TheOwner), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFireball_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_Mesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_CollisionSphere,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_physMaterial,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_theMaterial,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_FireParticles,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_FireParticlesComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFireball_Statics::NewProp_TheOwner,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFireball_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFireball>::IsAbstract,
@@ -269,7 +269,7 @@ void EmptyLinkFunctionForGeneratedCodeFireball() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFireball, 3280885539);
+	IMPLEMENT_CLASS(AFireball, 1813452166);
 	template<> PLATFORMERGAME_API UClass* StaticClass<AFireball>()
 	{
 		return AFireball::StaticClass();

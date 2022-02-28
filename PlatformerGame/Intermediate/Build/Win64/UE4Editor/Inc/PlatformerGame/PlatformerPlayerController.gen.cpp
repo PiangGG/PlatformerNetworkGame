@@ -70,19 +70,19 @@ void EmptyLinkFunctionForGeneratedCodePlatformerPlayerController() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bPlayerListDisplayed_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cHUD_MetaData[];
 #endif
-		static void NewProp_bPlayerListDisplayed_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bPlayerListDisplayed;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cHUD;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bPauseMenuDisplayed_MetaData[];
 #endif
 		static void NewProp_bPauseMenuDisplayed_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bPauseMenuDisplayed;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cHUD_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bPlayerListDisplayed_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cHUD;
+		static void NewProp_bPlayerListDisplayed_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bPlayerListDisplayed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -103,18 +103,14 @@ void EmptyLinkFunctionForGeneratedCodePlatformerPlayerController() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData[] = {
 		{ "Category", "Platformer Player Controller" },
-		{ "Comment", "//to hide or show the player list\n" },
+		{ "Comment", "//To hold a reference to our UMG HUD widget\n" },
 		{ "ModuleRelativePath", "PlatformerPlayerController.h" },
-		{ "ToolTip", "to hide or show the player list" },
+		{ "ToolTip", "To hold a reference to our UMG HUD widget" },
 	};
 #endif
-	void Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_SetBit(void* Obj)
-	{
-		((APlatformerPlayerController*)Obj)->bPlayerListDisplayed = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed = { "bPlayerListDisplayed", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlatformerPlayerController), &Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD = { "cHUD", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerPlayerController, cHUD), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed_MetaData[] = {
 		{ "Category", "Platformer Player Controller" },
@@ -129,18 +125,22 @@ void EmptyLinkFunctionForGeneratedCodePlatformerPlayerController() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed = { "bPauseMenuDisplayed", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlatformerPlayerController), &Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData[] = {
 		{ "Category", "Platformer Player Controller" },
-		{ "Comment", "//To hold a reference to our UMG HUD widget\n" },
+		{ "Comment", "//to hide or show the player list\n" },
 		{ "ModuleRelativePath", "PlatformerPlayerController.h" },
-		{ "ToolTip", "To hold a reference to our UMG HUD widget" },
+		{ "ToolTip", "to hide or show the player list" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD = { "cHUD", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerPlayerController, cHUD), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD_MetaData)) };
+	void Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_SetBit(void* Obj)
+	{
+		((APlatformerPlayerController*)Obj)->bPlayerListDisplayed = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed = { "bPlayerListDisplayed", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APlatformerPlayerController), &Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_SetBit, METADATA_PARAMS(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlatformerPlayerController_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_cHUD,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPauseMenuDisplayed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerPlayerController_Statics::NewProp_bPlayerListDisplayed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlatformerPlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlatformerPlayerController>::IsAbstract,
@@ -169,7 +169,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlatformerPlayerController, 4035790835);
+	IMPLEMENT_CLASS(APlatformerPlayerController, 1517210069);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APlatformerPlayerController>()
 	{
 		return APlatformerPlayerController::StaticClass();

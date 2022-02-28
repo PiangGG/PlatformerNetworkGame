@@ -16,9 +16,9 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameState() {}
 	PLATFORMERGAME_API UEnum* Z_Construct_UEnum_PlatformerGame_EMatchState();
 	UPackage* Z_Construct_UPackage__Script_PlatformerGame();
 	PLATFORMERGAME_API UScriptStruct* Z_Construct_UScriptStruct_FCharacterSpecification();
-	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	PLATFORMERGAME_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	PLATFORMERGAME_API UClass* Z_Construct_UClass_APlatformerGameState_NoRegister();
 	PLATFORMERGAME_API UClass* Z_Construct_UClass_APlatformerGameState();
 	ENGINE_API UClass* Z_Construct_UClass_AGameStateBase();
@@ -38,7 +38,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameState() {}
 		return EMatchState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EMatchState(EMatchState_StaticEnum, TEXT("/Script/PlatformerGame"), TEXT("EMatchState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_PlatformerGame_EMatchState_Hash() { return 1231767549U; }
+	uint32 Get_Z_Construct_UEnum_PlatformerGame_EMatchState_Hash() { return 104009191U; }
 	UEnum* Z_Construct_UEnum_PlatformerGame_EMatchState()
 	{
 #if WITH_HOT_RELOAD
@@ -85,6 +85,7 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameState() {}
 				Enumerators,
 				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::EnumClass,
 				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
@@ -122,17 +123,17 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterName_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterClass_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_CharacterName;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_CharacterClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterIcon_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CharacterIcon;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterClass_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterName_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_CharacterClass;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_CharacterName;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -149,12 +150,12 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FCharacterSpecification>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData[] = {
 		{ "Category", "Match State" },
 		{ "ModuleRelativePath", "PlatformerGameState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName = { "CharacterName", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterSpecification, CharacterName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass = { "CharacterClass", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterSpecification, CharacterClass), Z_Construct_UClass_ABaseCharacter_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon_MetaData[] = {
 		{ "Category", "Match State" },
@@ -163,16 +164,16 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon = { "CharacterIcon", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterSpecification, CharacterIcon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData[] = {
 		{ "Category", "Match State" },
 		{ "ModuleRelativePath", "PlatformerGameState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass = { "CharacterClass", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterSpecification, CharacterClass), Z_Construct_UClass_ABaseCharacter_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName = { "CharacterName", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FCharacterSpecification, CharacterName), METADATA_PARAMS(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FCharacterSpecification_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterIcon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FCharacterSpecification_Statics::NewProp_CharacterName,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FCharacterSpecification_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
@@ -202,7 +203,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCharacterSpecification_Hash() { return 4021885728U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCharacterSpecification_Hash() { return 1868297111U; }
 	DEFINE_FUNCTION(APlatformerGameState::execUpdateMatchTime)
 	{
 		P_GET_PROPERTY(FFloatProperty,Z_Param_NewTime);
@@ -257,19 +258,19 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 	}
 	struct Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics
 	{
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newState;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_newState_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_newState;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameState_eventChangeState_Parms, newState), Z_Construct_UEnum_PlatformerGame_EMatchState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState = { "newState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameState_eventChangeState_Parms, newState), Z_Construct_UEnum_PlatformerGame_EMatchState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::NewProp_newState,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlatformerGameState_ChangeState_Statics::Function_MetaDataParams[] = {
@@ -295,19 +296,19 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		{
 			EMatchState ReturnValue;
 		};
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameState_eventGetMatchState_Parms, ReturnValue), Z_Construct_UEnum_PlatformerGame_EMatchState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlatformerGameState_eventGetMatchState_Parms, ReturnValue), Z_Construct_UEnum_PlatformerGame_EMatchState, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlatformerGameState_GetMatchState_Statics::Function_MetaDataParams[] = {
@@ -370,31 +371,31 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TotalMatchTime_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cWaitingForPlayers_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TotalMatchTime;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentMatchState_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_CurrentMatchState;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_CurrentMatchState_Underlying;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Characters_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Characters;
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Characters_Inner;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cChangingLevel_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cChangingLevel;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cWaitingForPlayers;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cGameInProgress_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cGameInProgress;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cWaitingForPlayers_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cChangingLevel_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cWaitingForPlayers;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_cChangingLevel;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Characters_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Characters_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Characters;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_CurrentMatchState_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentMatchState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_CurrentMatchState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TotalMatchTime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_TotalMatchTime;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -404,8 +405,8 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		(UObject* (*)())Z_Construct_UPackage__Script_PlatformerGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlatformerGameState_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APlatformerGameState_ChangeState, "ChangeState" }, // 3750608227
-		{ &Z_Construct_UFunction_APlatformerGameState_GetMatchState, "GetMatchState" }, // 2021996314
+		{ &Z_Construct_UFunction_APlatformerGameState_ChangeState, "ChangeState" }, // 1797631077
+		{ &Z_Construct_UFunction_APlatformerGameState_GetMatchState, "GetMatchState" }, // 298717060
 		{ &Z_Construct_UFunction_APlatformerGameState_UpdateMatchTime, "UpdateMatchTime" }, // 2522629635
 	};
 #if WITH_METADATA
@@ -418,13 +419,39 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "PlatformerGameState" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData[] = {
+		{ "Category", "Match State" },
+		{ "Comment", "/* CLASS REFERENCES TO SCREENS TO BE DISPLAYED DURING A MATCH */" },
+		{ "ModuleRelativePath", "PlatformerGameState.h" },
+		{ "ToolTip", "CLASS REFERENCES TO SCREENS TO BE DISPLAYED DURING A MATCH" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers = { "cWaitingForPlayers", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cWaitingForPlayers), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData[] = {
+		{ "Category", "Match State" },
 		{ "ModuleRelativePath", "PlatformerGameState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime = { "TotalMatchTime", nullptr, (EPropertyFlags)0x0040000000000034, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, TotalMatchTime), METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress = { "cGameInProgress", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cGameInProgress), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData[] = {
+		{ "Category", "Match State" },
+		{ "ModuleRelativePath", "PlatformerGameState.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel = { "cChangingLevel", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cChangingLevel), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_Inner = { "Characters", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCharacterSpecification, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData[] = {
+		{ "Category", "Match State" },
+		{ "Comment", "//Character list we'll specify in the editor:\n" },
+		{ "ModuleRelativePath", "PlatformerGameState.h" },
+		{ "ToolTip", "Character list we'll specify in the editor:" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters = { "Characters", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, Characters), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -435,49 +462,23 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState = { "CurrentMatchState", nullptr, (EPropertyFlags)0x0040000000000034, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, CurrentMatchState), Z_Construct_UEnum_PlatformerGame_EMatchState, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData[] = {
-		{ "Category", "Match State" },
-		{ "Comment", "//Character list we'll specify in the editor:\n" },
-		{ "ModuleRelativePath", "PlatformerGameState.h" },
-		{ "ToolTip", "Character list we'll specify in the editor:" },
-	};
-#endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters = { "Characters", nullptr, (EPropertyFlags)0x0010000000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, Characters), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_MetaData)) };
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_Inner = { "Characters", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FCharacterSpecification, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData[] = {
-		{ "Category", "Match State" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "PlatformerGameState" },
 		{ "ModuleRelativePath", "PlatformerGameState.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel = { "cChangingLevel", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cChangingLevel), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData[] = {
-		{ "Category", "Match State" },
-		{ "ModuleRelativePath", "PlatformerGameState.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress = { "cGameInProgress", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cGameInProgress), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData[] = {
-		{ "Category", "Match State" },
-		{ "Comment", "/* CLASS REFERENCES TO SCREENS TO BE DISPLAYED DURING A MATCH */" },
-		{ "ModuleRelativePath", "PlatformerGameState.h" },
-		{ "ToolTip", "CLASS REFERENCES TO SCREENS TO BE DISPLAYED DURING A MATCH" },
-	};
-#endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers = { "cWaitingForPlayers", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, cWaitingForPlayers), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime = { "TotalMatchTime", nullptr, (EPropertyFlags)0x0040000000000034, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlatformerGameState, TotalMatchTime), METADATA_PARAMS(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlatformerGameState_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cWaitingForPlayers,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cGameInProgress,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_cChangingLevel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_Characters,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_CurrentMatchState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameState_Statics::NewProp_TotalMatchTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlatformerGameState_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlatformerGameState>::IsAbstract,
@@ -506,7 +507,7 @@ static struct FScriptStruct_PlatformerGame_StaticRegisterNativesFCharacterSpecif
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlatformerGameState, 1579582730);
+	IMPLEMENT_CLASS(APlatformerGameState, 2918638818);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APlatformerGameState>()
 	{
 		return APlatformerGameState::StaticClass();

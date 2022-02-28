@@ -1,36 +1,38 @@
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Definitions.PlatformerGame.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameGameModeBase.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameGameModeBase.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameInstance.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSessionSettings.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemTypes.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemNames.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineKeyValuePair.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\Interfaces/OnlineSessionInterface.h
-D:\component application\unreal\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineDelegateMacros.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameInstance.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameState.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\BaseCharacter.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\BaseCharacter.generated.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameState.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerPlayerState.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerState.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerState.generated.h
-D:\Code\unreal\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerPlayerState.generated.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SpectatorPawn.h
-D:\component application\unreal\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DefaultPawn.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DefaultPawn.generated.h
-D:\component application\unreal\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpectatorPawn.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Development\PlatformerGame\Definitions.PlatformerGame.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameGameModeBase.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameGameModeBase.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameInstance.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSessionSettings.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemTypes.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemNames.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineKeyValuePair.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineSubsystemPackage.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\Interfaces/OnlineSessionInterface.h
+C:\UE4\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Source\Public\OnlineDelegateMacros.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameInstance.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerGameState.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\BaseCharacter.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\BaseCharacter.generated.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameStateBase.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameStateBase.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerGameState.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Source\PlatformerGame\PlatformerPlayerState.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerState.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerState.generated.h
+E:\Piang\UnrealEngineProject\PlatformerNetworkGame\PlatformerGame\Intermediate\Build\Win64\UE4Editor\Inc\PlatformerGame\PlatformerPlayerState.generated.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/SpectatorPawn.h
+C:\UE4\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/DefaultPawn.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DefaultPawn.generated.h
+C:\UE4\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpectatorPawn.generated.h

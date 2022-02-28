@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\platformergamegamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\platformergameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\development\\platformergame\\definitions.platformergame.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\platformergamegamemodebase.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\platformergamegamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\platformergame.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\platformergameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\development\\platformergame\\definitions.platformergame.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

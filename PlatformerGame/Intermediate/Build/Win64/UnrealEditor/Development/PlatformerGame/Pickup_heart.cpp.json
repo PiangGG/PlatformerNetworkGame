@@ -1,0 +1,25 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\pickup_heart.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\platformergameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\development\\platformergame\\definitions.platformergame.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\pickup_heart.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\pickup.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\pickup.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\pickup_heart.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\basecharacter.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\basecharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

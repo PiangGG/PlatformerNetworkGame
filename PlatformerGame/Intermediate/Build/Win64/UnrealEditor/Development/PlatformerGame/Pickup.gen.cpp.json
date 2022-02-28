@@ -1,0 +1,15 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\pickup.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\platformergameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\development\\platformergame\\definitions.platformergame.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\pickup.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\pickup.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

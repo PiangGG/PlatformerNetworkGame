@@ -1,0 +1,38 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\fireball.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\platformergameeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\development\\platformergame\\definitions.platformergame.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\fireball.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\fireball.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\source\\platformergame\\basecharacter.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "e:\\piang\\unrealengineproject\\platformernetworkgame\\platformergame\\intermediate\\build\\win64\\unrealeditor\\inc\\platformergame\\basecharacter.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\shapecomponent.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\spherecomponent.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\particles\\particlesystemcomponent.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\particles\\particlesystem.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\particles\\particleperfstats.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\particlesystem.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\particles\\emitter.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\emitter.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\particlesystemcomponent.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\physicscore\\public\\physicalmaterials\\physicalmaterial.h",
+            "c:\\ue4\\ue_5.0\\engine\\source\\runtime\\physicscore\\public\\physicssettingsenums.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\physicscore\\physicssettingsenums.generated.h",
+            "c:\\ue4\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\physicscore\\physicalmaterial.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

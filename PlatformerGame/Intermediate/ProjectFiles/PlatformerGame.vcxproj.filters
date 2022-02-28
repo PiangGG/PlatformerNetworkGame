@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PlatformerGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{4FC78A8E-BDA2-45DB-9C66-E88E26086B25}</UniqueIdentifier>
+      <UniqueIdentifier>{0CB9DB5D-ACCC-43F7-B867-E2C0FD26F961}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PlatformerGame.Target.cs">
       <Filter>Source</Filter>
@@ -13,7 +13,7 @@
     </None>
     <None Include="..\..\PlatformerNetworkGame.lnk" />
     <Filter Include="Config">
-      <UniqueIdentifier>{12465239-D37B-463D-8D28-7B0A159F02E2}</UniqueIdentifier>
+      <UniqueIdentifier>{0EA48815-2C08-4603-BCCE-407BBB190759}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -28,7 +28,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PlatformerGame">
-      <UniqueIdentifier>{02CD54C8-0D31-40C1-B01D-4DEF351C5B43}</UniqueIdentifier>
+      <UniqueIdentifier>{41A55980-03C8-4759-82A6-D2FE27125BDC}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PlatformerGame\BaseCharacter.cpp">
       <Filter>Source\PlatformerGame</Filter>

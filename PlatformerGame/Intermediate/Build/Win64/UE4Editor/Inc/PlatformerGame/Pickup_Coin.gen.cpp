@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodePickup_Coin() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickup_Coin, 3350976259);
+	IMPLEMENT_CLASS(APickup_Coin, 11224120);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APickup_Coin>()
 	{
 		return APickup_Coin::StaticClass();

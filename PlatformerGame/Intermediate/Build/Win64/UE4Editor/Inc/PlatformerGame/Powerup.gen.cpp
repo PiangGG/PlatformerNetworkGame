@@ -88,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodePowerup() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APowerup, 232583974);
+	IMPLEMENT_CLASS(APowerup, 604941281);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APowerup>()
 	{
 		return APowerup::StaticClass();

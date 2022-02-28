@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodePickup_heart() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APickup_heart, 2450638242);
+	IMPLEMENT_CLASS(APickup_heart, 1992172988);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APickup_heart>()
 	{
 		return APickup_heart::StaticClass();

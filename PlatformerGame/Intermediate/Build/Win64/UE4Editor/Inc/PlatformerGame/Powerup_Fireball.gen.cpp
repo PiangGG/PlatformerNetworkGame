@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodePowerup_Fireball() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APowerup_Fireball, 1580132893);
+	IMPLEMENT_CLASS(APowerup_Fireball, 2225381077);
 	template<> PLATFORMERGAME_API UClass* StaticClass<APowerup_Fireball>()
 	{
 		return APowerup_Fireball::StaticClass();
